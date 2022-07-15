@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=IBM+Plex+Serif&family=Merriweather:wght@700&family=Montserrat+Subrayada&family=Poppins:wght@300&family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+:root {
+    --gen-font: 'Poppins', sans-serif;
+    --head-font: 'Lora', serif;
+    --tech-font: 'Bungee', cursive;
+    --black: #333;
+    --white: white;
+    --red: #ff1f50;
+    --grey: rgba(128, 128, 128, 0.527);
+    --blue: rgb(14, 44, 134);
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #030000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: rgb(214, 55, 55);
+}
+
+.reminder {
+  position: fixed;
+  bottom: 0px;
+  right: 0px; 
+  font-size: 1.5rem;
+  z-index: 100;
+  background-color: var(--red);
+  display: none;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: rgb(218, 12, 12);
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body, li, a {
+    text-align: center;
+    font-family: var(--gen-font);
+    text-decoration: none;
+    list-style: none;
+    margin: 0%;
+}
+
+li, a {
+    color: var(--white);
+}
+
+h1, h2, h3, .special {
+    font-family: var(--head-font);
+}
+
+p, li, a, button, table, th, td {
+    font-family: var(--gen-font);
+}
+
+.navigationBar {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color:  var(--black);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.dept {
+    color: var(--white);
+}
+
+.dept h2 {
+    font-size: 1.35rem;
+}
+ 
+.leftBox {
+    margin-left: 20px;
+}
+
+.techLogo h1 {
+    margin: 0%;
+    padding: 0%;
+}
+
+.techLogo .link h1 {
+    font-family: var(--tech-font);
+    margin: 0%;
+    height: fit-content;
+    font-size: 3.5rem;
+}
+
+.christLogo {
+    width: 300px;
+    filter: invert(100%);
+}
+
+.link {
+    margin: 0px 10px;
+    color: white;
+    padding: 5px;
+}
+
+.link:hover {
+    color: var(--red);
+    transition: all 0.3s ease-in-out;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--black);
+    padding: 3vh 0px;
+    color: var(--white);
+}
+
+.footer div {
+    margin: 15px 0px;
+}
+
+.active {
+    border: 1.5px solid black;
+    color: var(--red);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.desktopNav {
+    display: block;
+}
+  
+.test {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+}
+  
+.mobileNav {
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    div.navigationBar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 10px 20px 10px;
+    }
+    
+    .dept {
+        font-size: 0.6rem ;
+    }
+
+    .techLogo h1 {
+        font-size: 1.2rem;
+    }
+
+    .techLogo>.link>h1 {
+        font-size: 20px;
+    } 
+
+    .techLogo h2 {
+        font-size: 1.2rem;
+    }
+
+    .christLogo {
+        width: 150px;
+    }
+
+    .centerBox  {
+        display: none;
+    }
+
+    .link {
+        margin: 0px 5px;
+        font-size: .9rem;
+    }
+
+    .mobileNav {
+        display: block;
+    }
+    
+    .desktopNav {
+        display: none;
+    }
+
+    div.copyright {
+        font-size: 1rem;
+        margin: 0px 30px;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+}
+
+.hazard-background {
+    height: 10px;
+    color: var(--white);
+    background-image: repeating-linear-gradient(
+      -55deg,
+      #000,
+      #000 20px,
+      #ffb101 20px,
+      #ffb101 40px
+    );
+  }

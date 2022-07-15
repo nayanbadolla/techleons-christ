@@ -1,0 +1,255 @@
+.parallax {
+  background-image: url("../images/suit.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh; 
+}
+
+.theme {
+  margin-top: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.heading {
+  padding: 50px 0 20px 0;
+  font-weight: bold;
+  font-size: 1.4rem;
+  background-color: var(--grey);
+}
+
+.heading div {
+	margin: 25px 15rem;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+div.mainHeading {
+	font-size: 1.8rem;
+  color: var(--red);
+  margin-top: 0;
+}
+
+.special {
+  color: var(--red);
+  font-size: 1.8rem;
+}
+
+/* .btn {
+  background-color: var(--grey);
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+} */
+
+.getStartedBtn {
+  text-align: center;
+  font-size: 1rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+  
+.getStartedBtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+  
+.getStartedBtn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.3s;
+}
+  
+.getStartedBtn:hover span {
+  padding-right: 25px;
+}
+  
+.getStartedBtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.fixedButton{
+  position: fixed;
+  bottom: 40px;
+  right: 0px; 
+  margin: 20px;
+  z-index: 100;
+}
+
+.roundedFixedBtn:hover {
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+
+.roundedFixedBtn {
+  height: 50px;
+  width: 220px;  
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: var(--red);
+  color: var(--black);
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+#groups {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  margin: 3rem 0;
+}
+
+#groups .card {
+  background-color: var(--red);
+  margin: 0 2rem;
+  padding: 1.5rem;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+  color: var(--black);
+  box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
+}
+
+#groups .card:hover {
+  background-color: #f80a3e;
+  box-shadow: 16px 16px 19px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 16px 16px 19px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 16px 16px 19px 0px rgba(0,0,0,0.75);
+  transform: scale(1.009);
+  transition: all 0.3s ease-in-out;
+}
+
+.card h2 {
+  margin: 0;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--grey);
+  padding-bottom: 50px;
+} 
+
+.b1, .b2, .b3, .b4 {
+  background-color:  var(--black);
+  color: var(--white);
+  width: 10vw;
+  /* height: 25vh; */
+  margin: 2vw;
+  border-radius: 30px;
+  text-align: center;
+  border: black 1 px solid;
+  box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
+}
+
+.boxes div:hover {
+  transform: scale(1.009);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 16px 16px 19px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 16px 16px 19px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 16px 16px 19px 0px rgba(0,0,0,0.75);
+}
+
+.navigationBar {
+  padding: 0px 88px;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.timeDisplay {
+  font-size: 3rem;
+  margin: 0px;
+}
+
+.non-technical {
+  margin-top: 500px !important;
+}
+
+.groupLogo {
+  border-radius: 100%;
+  width: 100px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .heading div {
+    margin: 20px 20px;
+    font-size: 1rem;
+  }
+
+  div.mainHeading {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .content {
+    margin: 0px 0px;
+  }
+  
+  .desc {
+    font-size: .5rem;
+  }
+
+  .parallax {
+    height: 100vh;
+  }
+
+  .theme {
+    margin: 50px 0px 0px 0px;
+  }
+
+  .boxes, #groups {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .boxes {
+    padding-bottom: 30px;
+  }
+
+  .boxes div {
+    width: 200px;
+  }
+
+  #groups .card {
+    margin-top: 10px;
+  }
+
+  .card {
+    margin-top: 30px;
+  }
+
+  .getStartedBtn span {
+    font-size: 1rem;
+  }
+
+  .roundedFixedBtn {
+    width: fit-content;
+    height: fit-content;
+    padding: 7px 15px;
+  }
+}
+
+.FBILogo {
+  border-radius: 0%;
+}
+
+img.groupLogo {
+  margin-top: 0;
+}

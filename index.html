@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Keywords" content="CHRIST (Deemed to be University), Department of Computer Science, TECHLEONS, TECHLEONS 2022, Events, Competition, Website">
+    <meta name="Description" content="Intra-Departmental Fest organized by Second Year students of Department of Computer Science, CHRIST (Deemed to be University)">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon_io/favicon.ico">
+    <link rel="stylesheet" href="../css/navfoot.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>TECHLEONS 2022 | CHRIST (Deemed to be University)</title>
+</head>
+
+<body>
+    <div class="navigationBar">
+        <div class="dept"><h2>Department of <br> Computer Science</h2></div>
+        <div class="leftBox techLogo">
+            <a class="link" href="./index.html" rel="noopener noreferrer">
+                <h1>TECHLEONS 2022</h1>
+            </a>
+        </div>
+        <div class="rightBox">
+            <a href="https://www.christuniversity.in/" target="blank" rel="noopener noreferrer">
+                <img src="../images/Christ University Black.png" class="christLogo" alt="Christ">
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div>
+            <a href="./groups.html" class="fixedButton">
+                <button class="getStartedBtn roundedFixedBtn">
+                    <span> GET STARTED </span>
+                </button>
+            </a>
+            <Marquee class="reminder" scrollamount="12">
+                REMINDER: THIRD LOCK HOLMES(Escape Room) starts at 04:00 PM at Room 627, Ist Floor, Block II
+            </Marquee>
+        </div>
+        <div class="parallax"></div>
+        <div class="hazard-background"></div>
+        <div class="heading">
+            <div class="mainHeading">Welcome to <span class="special">TECHLEONS 2022</span></div>
+            <div class="desc">
+                The Intra-Departmental Fest of Computer Science Department, CHRIST (Deemed to be University), Bengaluru.
+                <br><br>
+                Here is a chance for you to showcase your talents, both technical and non-technical through the most creative events developed by your peers. Information regarding all events and workshops are now just a few clicks away, so ensure to tread all tracks in front of you. It's time to step up your game with TECHLEONS!
+                <br><br>
+                <span class="special">8 AGENCIES</span>
+                |
+                <span class="special">720 AGENTS</span>
+                |
+                <span class="special">12 CASES</span>
+                |
+                <span class="special">9 DAYS</span>
+            </div>
+        </div>
+
+        <div class="boxes">
+            <div class="b1">
+                <p class="title"> Days 
+                    <p id="daysO" class="timeDisplay"></p>
+                </p>
+            </div>
+            <div class="b2"><p class="title">Hours <p id="hoursO" class="timeDisplay"></p></p></div>
+            <div class="b3"><p class="title">Minutes <p id="minsO" class="timeDisplay"></p></p></div>
+            <div class="b4"><p class="title">Seconds <p id="secsO" class="timeDisplay"></p></p></div>
+        </div>
+    </div>
+
+    <div class="hazard-background"></div>
+
+    <div class="footer">
+        <div class="techLogo">
+            <h2>Department of Computer Science</h2>
+            <h1>TECHLEONS</h1>
+            <h1>2022</h1>
+        </div>
+        <div class="copyright">
+            All rights reserved Christ University, Department of Computer Science, Techleons and Team &copy;
+        </div>
+    </div>
+</body>
+
+<script>
+    const daysO = document.getElementById("daysO");
+    const hoursO = document.getElementById("hoursO");
+    const minsO = document.getElementById("minsO");
+    const secsO = document.getElementById("secsO");
+
+    // Set the date we're counting down to
+    var countDownDate = new Date("April 13, 2022 9:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // console.log(days, hours, minutes, seconds);
+        daysO.innerHTML = days;
+        hoursO.innerHTML = hours;
+        minsO.innerHTML = minutes;
+        secsO.innerHTML = seconds;
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            days = hours = minutes = seconds = 0;
+        } 
+    }, 1000);
+  
+</script>
+
+</html>

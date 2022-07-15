@@ -1,0 +1,113 @@
+.tableContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.table {
+    padding: 20px;
+    background-color: var(--red);
+    font-size: 1.2rem;
+    margin: 25px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
+}
+
+.captain {
+    font-weight: bolder;
+}
+
+.captainLogo {
+  height: 30px;
+}
+
+.table:hover {
+    background-color: #f80a3e;
+    transform: scale(1.01);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 16px 16px 19px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 16px 16px 19px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 16px 16px 19px 0px rgba(0,0,0,0.75);
+}
+
+.heading {
+    font-weight: bold;
+}
+
+table {
+    border: 1px solid black;
+}
+
+table td {
+    padding: 5px 10px;
+}
+
+.fixedButton{
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+    margin: 20px;
+    z-index: 100;
+}
+
+.roundedFixedBtn:hover {
+    color: #ff1f50;
+    transition: all 0.3s ease-in-out;
+}
+
+.roundedFixedBtn {
+  height: 50px;
+  width: 80px;  
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .tableContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.groupLogo {
+    border-radius: 100%;
+    width: 200px;
+    margin-top: 50px;
+}
+
+td {
+    text-align: left;
+}
+
+.FBILogo {
+    border-radius: 0%;
+}
+
+.legend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

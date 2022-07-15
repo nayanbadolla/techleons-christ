@@ -1,0 +1,94 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding: 0px 10rem;
+    background-color: white;
+}
+
+body {
+    background-color: rgb(188,188,188);
+}
+
+.heading {
+    padding: 3rem 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background-color: rgb(188,188,188);
+}
+
+.person {
+    /* display: inline; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.person img {
+    height: 150px;
+    border-radius: 100%;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.email {
+    font-size: .9rem;
+}
+
+.regno {
+    font-size: 1rem;
+}
+
+.pos, .work {
+    font-weight: bold;
+}
+
+.person a {
+    color: black;
+}
+
+.navigationBar {
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 100%;
+        padding: 0px 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .heading {
+        padding: 1.5rem 0rem;
+        font-size: 1.3rem;
+        background-color: rgb(188,188,188);
+        /* background-color: red; */
+    }
+    
+    .person {
+        margin: 20px 20px;
+    }
+
+    .person img {
+        height: 120px;
+    }
+    
+    .name{
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    
+    .email {
+        font-size: .6rem;
+    }
+    
+    .regno {
+        font-size: .8rem;
+    }
+}

@@ -1,0 +1,43 @@
+table {
+    width: 100%;
+    background-color: rgb(71, 71, 71);
+    color: silver;
+    margin-bottom: 50px;
+}
+
+th {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+th, td {
+    border: 5px solid silver;
+    padding: 10px;
+}
+
+td {
+    width: 20%;
+}
+
+tr:hover {
+    background-color: var(--black);
+    transition: all 0.3s ease-in-out ;
+}
+
+table {
+    margin-bottom: 0;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+    table {
+        font-size: .7rem;
+    }
+
+    tr th:nth-child(3), tr td:nth-child(3) {
+        display: none;
+    }
+}
